@@ -1,0 +1,16 @@
+{
+  "name": "facebook_api_rate_limiter",
+  "version": "1.0.0",
+  "description": "This app takes FB access token and print the user data",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Arjun Anghan",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.7",
+    "inquirer": "^8.2.6",
+    "readline-sync": "^1.4.10"
+  }
+}
