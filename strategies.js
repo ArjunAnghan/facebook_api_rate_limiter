@@ -103,7 +103,6 @@ const strategy1 = async (accessToken) => {
 			console.log(
 				`Wait Time (seconds): ${(waitTime / 1000).toFixed(2)} seconds`
 			);
-<<<<<<< HEAD
 		}  catch (error) {
 			// if error is because of invalid access token
 			if (error?.response?.data?.error?.type == 'OAuthException') {
@@ -116,15 +115,6 @@ const strategy1 = async (accessToken) => {
 		setTimeout(handleCallRate, waitTime);
 	}
 }
-=======
-		} catch (error) {
-			// Handle any errors that occur during the API request
-			console.log(error);
-		}
-		// Schedule the next API call based on the calculated wait time
-		setTimeout(handleCallRate, waitTime);
-	}
->>>>>>> 2da955e8ba611072635bbf9baae7c4257ac5c23f
 
 	// Start handling the rate of API calls
 	handleCallRate();
